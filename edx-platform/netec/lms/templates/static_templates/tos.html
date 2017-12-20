@@ -1,0 +1,107 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Terms of Service")}</%block>
+
+<style>
+
+h3 {
+  margin-bottom: 1px;
+  margin-top: 15px;
+}
+
+p {
+  margin-left: 10px;
+  padding: 10px;
+  text-align: justify;
+}
+
+li {
+  padding: 10px;
+}
+
+</style>
+
+<section class="container about">
+<h1>${_("Terms of Service")}</h1>
+
+    <h2>CONDICIONES DE CONTRATACIÓN, CANCELACIÓN Y PAGO DE CURSO</h2>
+
+    <h3>DESCRIPCIÓN DEL PRODUCTO</h3>
+    <p>Netec a través de su tienda virtual <a href="www.netecdigital.com" target="_blank">www.netecdigital.com</a> ofrece cursos de capacitación online disponibles desde cualquier lugar y cualquier momento.</p>
+
+    <h3>CAPACIDAD DE CONTRATACIÓN</h3>
+    <p>El usuario declara bajo su responsabilidad ser mayor de edad y disponer de capacidad legal necesaria para contratar los servicios ofertados por Netec, manifestando haber leí­do í­ntegramente las presentes condiciones generales así­ como en su caso, las condiciones particulares de los cursos, productos y/o servicios ofertados objeto de contratación, entendiéndolas y aceptándolas plenamente y sin reserva alguna. El usuario tendrá acceso en cualquier momento a las referidas condiciones e instrucciones, entendiéndose vigentes las publicadas en el momento de solicitar cada  curso, producto o servicio.</p>
+
+    <h3>PROCESO Y CONFIRMACIONES DE COMPRA:</h3>
+    <p>
+      <ul>
+        <li>Es responsabilidad del cliente registrarse como usuario proporcionando una dirección valida de correo electrónico y completando los datos solicitados en el formulario.</li>
+        <li>Antes de efectuar el pago, el usuario deberá aceptar la polí­tica de privacidad y condiciones de compra, los cuales al realizar la compra se da por entendido que está de acuerdo con las mismas.</li>
+        <li>Durante el proceso de compra, el usuario registrado podrá acceder a los productos seleccionados con el desglose de precios e impuestos aplicables.</li>
+        <li>Si el cliente NO llena el formulario y NO realiza el cargo a su tarjeta. Netec no considerará válida su inscripción para dar accesos a la plataforma, por lo que Netec únicamente dará acceso a las personas que hayan realizado el pago y el mismo haya sido cargado (cobrado) a la tarjeta de crédito o débito.</li>
+        <li>Será responsabilidad del usuario verificar sus datos proporcionados durante el proceso de compra. Una vez realizada la confirmación de compra por el usuario, en donde él plasma los datos solicitados en el formulario bajo protesta de decir verdad, la empresa Netec no se hará responsable del error u omisión de los datos en la orden de compra.</li>
+        <li>Si el cliente ya es un usuario registrado de la tienda online, sólo tendrá que introducir su e-mail y contraseña (proporcionados durante el registro) para poder realizar la compra.</li>
+        <li>Una vez confirmado el pago del programa seleccionado por el usuario, éste no podrá cambiar su curso.</li>
+      </ul>
+    </p>
+
+    <h3>EJECUCIÓN DEL CURSO</h3>
+    <p>La entrega del nombre de usuario y su correspondiente contraseña necesarios para el inicio de la ejecución del curso, se realizará en menos de 24 horas hábiles si desea iniciar de inmediato o con la antelación suficiente al inicio oficial del curso en la cuenta de correo electrónico facilitada por el comprador en el formulario de registro correspondiente una vez se haya procedido al alta del mismo en la plataforma virtual.</p>
+
+    <h3>PRECIOS Y MODIFICACIONES</h3>
+    <p>Los precios aplicables a cada producto son los indicados en la página web www.netecdigital.com en la fecha de la solicitud del producto o curso, incluyendo todos ellos los impuestos aplicables. Las ofertas estarán debidamente marcadas e identificadas como tal, indicando convenientemente el precio anterior y el precio de la oferta y serán válidas durante el perí­odo especificado o en su defecto durante todo el tiempo que permanezcan accesibles a los destinatarios del servicio. Netec se reserva el derecho de efectuar en cualquier momento y sin previo aviso, las modificaciones que considere oportunas, pudiendo actualizar diariamente los cursos, productos y servicios en función del mercado. Tales modificaciones no afectarán a las contrataciones de servicios y productos ya realizados.</p>
+
+    <h3>FORMAS DE PAGO</h3>
+    <p>Podrás realizar el pago de tus cursos en cualquiera de las siguientes opciones:</p>
+    <p>
+      <ul>
+        <li>Tarjeta de crédito: Las tarjetas que actualmente admite la plataforma son Visa y MasterCard,  el pago deberá realizarse a través de la pasarela de pago seguro Multipagos Bancomer, de esta manera Netec no manipula ningún dato del cliente referente a la tarjeta, todos los datos son tratados por el banco utilizando la tecnologí­a 3-D Secure que se basa en los programas Verified by Visa y MasterCard SecureCode. Una vez que el cliente ha introducido los datos de su tarjeta de crédito, aparecerá una nueva ventana en la que se le solicitará su código de seguridad personal. La entidad financiera autenticará la transacción en unos segundos y además confirmará que el cliente es quién realiza la compra, si el cliente todaví­a no se ha registrado en Verified by Visa o MasterCard SecureCode, primero tendrá que activar esta función.</li>
+        <li>PayPal: El cliente podrá utilizar las diferentes formas de pago en su cuenta de Paypal (tarjeta de débito o  crédito incluyendo American Express, depósito bancario o transferencia bancaria). El servicio  encripta y resguarda los datos de manera segura por lo que Netec no obtiene información confidencial, si el cliente todaví­a no se ha registrado en PayPal, primero tendrá que activar su cuenta.</li>
+      </ul>
+    </p>
+
+    <h3>CANCELACIONES</h3>
+    <p>Netec no cancela cursos o realiza devoluciones de pagos realizados.</p>
+    <p>El CLIENTE se obliga: En caso de suspensión definitiva del programa, no se entregarán constancias, certificados o documentos que acrediten la participación en los cursos.</p>
+    <p>Netec  se obliga: Asegurarse del correcto funcionamiento de la plataforma y mantenimiento técnico constante a fin de evitar fallas por parte de nuestra tecnologí­a.</p>
+
+    <h3>FACTURACIÓN</h3>
+    <p>'En caso de requerir factura, se deberán proporcionar los datos al correo informes@netecdigital.com. La factura se podrá solicitar máximo 48 horas después de la compra y no se podrá re facturar por ningún motivo.)}</p>
+
+    <h3>INCIDENCIAS Y RECLAMACIONES</h3>
+    <p>En el caso de que el usuario o comprador desee comunicar alguna incidencia, comentario o efectuar alguna reclamación podrá hacerlo de dos formas:</p>
+    <p>
+      <ol>
+        <li>Por teléfono, de lunes a viernes de 12:00 a 15:30 horas llamando a:
+          <ul>
+            <li>México: 9000 4500</li>
+            <li>Peru: (511) 593 5099 / 593 5342</li>
+            <li>Bogotá: (57) 1743 6677</li>
+            <li>Medellí­n:  (57) 4604 3481</li>
+            <li>Chile: (562) 2706 0480 </li>
+          </ul>
+        </li>
+        <li>Por correo electrónico a <a href="mailto:informes@netecdigital.com" target="_blank">informes@netecdigital.com</a></li>
+      </ol>
+    </p>
+    <p>En cualquier caso se acusará recibo de la incidencia o reclamación a través del correo electrónico. Netec dará respuesta a las reclamaciones recibidas en el plazo más breve posible y en todo caso en el plazo máximo de un mes desde la presentación de la reclamación.</p>
+
+    <h3>CONDICIONES</h3>
+    <p>Para los cursos en donde se otorgan PDUs, el cliente deberá cumplir con el 100% del curso y actividades para obtener el diploma que le servirá para comprobar la obtención de los PDUs. Se entiende por PDU Unidad de Desarrollo Profesional, por sus siglas en inglés Professional Development Unit. Muchas de las certificaciones requieren acumular estas Unidades de Desarrollo Profesional para obtener o mantener activa la certificación. Un PDU equivale a una hora de estudio. </p>
+
+    <h3>SOBRE LOS DATOS PERSONALES</h3>
+    <p>Los datos personales pueden ser recabados de distintas formas: cuando el cliente nos los proporciona directamente, cuando visita nuestro sitio de Internet o por diversos medios como cuando obtenemos información a través de otras fuentes que están permitidas por la ley. Esta polí­tica de privacidad ampara todos los datos compartidos voluntariamente por el usuario en esta solicitud, nuestro sitio web y/o servicios en lí­nea. Los datos que recabamos de forma directa o cualquier otro medio permitido por la ley son: nombre completo, dirección, correo electrónico, y otros datos de carácter personal necesarios que requiera el responsable de los datos para efectos de registros e inscripción del usuario y remitirle información. Todos los datos obtenidos serán resguardados por Netec y para el cumplimiento de sus fines podrá transferirlos con quienes tenga contratados servicios para el procesamiento de datos, para acreditaciones y certificaciones, intercambios académicos, así­ como para ofrecerle los servicios de Netec de cualquier tipo y los terceros que reciban datos personales para su tratamiento, sólo recibirán aquellos datos personales que requieran para realizar su labor.</p>
+
+    <h3>DERECHOS DE PROPIEDAD INTELECTUAL E INDUSTRIAL</h3>
+    <p>No se interpretará que los presentes términos y condiciones conllevan una cesión de cualquier derecho de propiedad intelectual o industrial sobre el sitio y la compra del curso. Se prohí­be expresamente a los usuario la utilización o explotación de forma cualquier parte del Sitio, o la Compra (lo que incluye la reproducción, la transformación, la distribución, la difusión pública, la puesta a disposición del público, la extracción, la reutilización o el reenví­o de éstos), a menos que dicha cesión sea autorizada por escrito por Netec en los presentes términos y condiciones o sea impuesta por cualquier disposición legal de obligado cumplimiento. Asimismo, no alterarán algún derecho de autor ni cualquier otra reserva de derechos de propiedad intelectual o industrial</p>
+
+    <h3>NULIDAD PARCIAL</h3>
+    <p>Si alguna de las presentes condiciones es declarada no válida, ilegal o no aplicable por cualquier tribunal de la jurisdicción competente, dicha condición se tendrá por no puesta, no considerándose nulo o ineficaz la totalidad del contrato, continuando vigente el resto del mismo. Para el caso de que se produzca una laguna legal respecto de la interpretación de cualquier aspecto o condición del contrato, la interpretación deberá realizarse en concordancia con los demás términos y condiciones, y en consideración a la finalidad y naturaleza del mismo.</p>
+
+    <h3>JURISDICCIÓN Y LEY APLICABLE</h3>
+    <p>Las presentes condiciones están redactadas en español, y se encuentran sometidas a la legislación Mexicana vigente. Para cualquier tipo de controversia derivada de la utilización de los servicios ofrecidos o de los contenidos propios de esta web, las partes, por la aceptación de estas Condiciones, se someterán a los Juzgados y Tribunales de la Ciudad de México, Distrito Federal, y en aquellos casos en los que el comprador resida en el extranjero, expresamente se acuerda que las partes se someterán a los Juzgados de la Ciudad de México, Distrito Federal.</p>
+
+
+</section>

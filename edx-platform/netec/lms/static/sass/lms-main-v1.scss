@@ -1,0 +1,14 @@
+// LMS - CSS application architecture
+// ====================
+
+// Load the LTR version
+$pattern-library-path: '../../edx-pattern-library' !default;
+@import 'edx-pattern-library/pattern-library/sass/edx-pattern-library-rtl';
+@import 'lms/static/sass/partials/base/_variables.scss';
+// @import 'variables';
+
+// import LMS base
+@import 'lms/static/sass/lms-main-v1';
+
+// import the custom changes
+@import "overrides";

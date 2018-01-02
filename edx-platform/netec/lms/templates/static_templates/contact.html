@@ -1,0 +1,34 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Contact")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>${_("Contact")}</h1>
+        <p>
+        	Si tiene alguna duda o requiere de más información, puede contactarnos a los siguientes teléfonos:
+        </p>
+        <ul>
+        	<li>
+        	    México: 9000 4500
+        	</li>
+        	<li>
+        		Perú: (511) 593 5099 / 593 5342
+        	</li>
+        	<li>
+        		Bogotá: (57) 1743 6677
+        	</li>
+        	<li>
+        		Medellín: (57) 4604 3481
+        	</li>
+        	<li>
+        		Chile: (562) 2706 0480
+        	</li>
+        </ul>
+        <p>
+        	O escríbanos al correo informes@netecdigital.com
+        </p>
+    </section>
+</main>

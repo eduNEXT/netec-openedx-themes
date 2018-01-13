@@ -41,6 +41,7 @@ h1 {
 // }
 
 .btn-neutral{
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   border-color: $main-color;
   background: white;
   color: $main-color;
@@ -160,7 +161,7 @@ body header.header-global .logo img{
   margin-top: 4px !important;
 }
 .header-global.slim .wrapper-header .list-inline.nav-global{
-  margin-top: 16px !important;
+  margin-top: 4px !important;
 
   @media (max-width: $screen-sm-max) {
     padding-left: 31px;
@@ -172,6 +173,29 @@ body header.header-global .logo img{
     top: -8px;
   }
 }
+.header-global,
+.header-global.slim  {
+  .wrapper-header .course-header {
+    margin-top: 6px !important;
+  }
+
+  .user {
+    .user-link .label-username {
+      margin: 12px 5px 15px 12px;
+    }
+
+    .user-dropdown {
+      margin-top: 4px;
+      padding-bottom: 4px;
+    }
+  }
+
+
+  .doc-link {
+    margin: 12px 15px;
+  }
+}
+
 .header-global .wrapper-header .course-header {
   max-width: 50%;
   white-space: nowrap;
@@ -236,7 +260,7 @@ body header.header-global .logo img{
   text-align: left;
 }
 .course-info header.course-profile .intro-inner-wrapper{
-  max-width: none !important;
+  // max-width: none !important;
   min-width: initial !important;
 }
 .course-info .register {
@@ -292,12 +316,19 @@ div.info-wrapper section.handouts ol li a{
 a, a:visited{
   color: $main-color;
 }
+
+.header-global .nav-global {
+  margin-top: 4px;
+  margin-bottom: 1rem;
+}
+
 .header-global .nav-global li a{
   color: $main-color
 }
 .header-global .nav-global li a:hover{
-  color: white;
-  background: $main-color;
+  color: darken($main-color, 5%);
+  background: $hover-color;
+  border-color: darken($main-color, 5%);
 }
 
 .dashboard .my-courses .course .details .enter-course{
@@ -322,9 +353,9 @@ a, a:visited{
   border: solid 2px $main-color;
   background: $main-color;
 
-  &:hover{
+/*  &:hover{
     background: $hover-color;
-  }
+  }*/
 }
 .search-bar .search-button{
   background: $main-color;
@@ -352,13 +383,14 @@ body header.header-global.slim {
 
   }
 
+  .logo {
+    margin: -12px 39px 0 0;
+  }
+
   .logo img {
      height: 50px;
     margin-top: 4px;
   }
-
-
-
 
   .dropdown-menu-container .menu-button {
     text-shadow: none;
@@ -375,7 +407,7 @@ body header.header-global.slim {
 .home > header {
   background-color: #006699;
   background: url("../images/netec_header_170607.jpg") center center;
-  background-size: 85% 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   height: 350px;
 }
@@ -407,7 +439,7 @@ body.view-in-course .container {
 
   .home {
     border-bottom: 1px solid #d9d9d9;
-    max-width: 100%;
+    // max-width: 100%;
   }
 }
 
@@ -425,6 +457,30 @@ body.view-in-course .container {
   left: 0;
 }
 
+// Forum 500 page
+section.outside-app h1 {
+  text-align: center;
+}
+
+// Fix for LMS instuctor allowances modal
+#modalContainer .modal {
+  margin: initial;
+  width: initial;
+  position: initial;
+  left: initial;
+}
+
+#modalContainer #modalCloseButton {
+  top: -8px !important;
+  right: -8px !important;
+  z-index: 9999999 !important;
+}
+
+// Fix calculator with invisible input
+.calc-main #calculator_wrapper form .input-wrapper #calculator_input {
+  color: #222;
+}
+
 .heading-right {
   position: absolute;
   top: 0px;
@@ -433,3 +489,13 @@ body.view-in-course .container {
   margin: 0px;
   padding: 0px;
 }
+
+.course-info .course-sidebar .important-dates li .icon {
+  margin-top: -4px;
+  vertical-align: middle;
+}
+
+.container.about {
+  line-height: 1.5;
+}
+

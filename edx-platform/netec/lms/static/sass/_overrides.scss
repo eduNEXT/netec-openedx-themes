@@ -425,6 +425,30 @@ body.view-in-course .container {
   left: 0;
 }
 
+// Forum 500 page
+section.outside-app h1 {
+  text-align: center;
+}
+
+// Fix for LMS instuctor allowances modal
+#modalContainer .modal {
+  margin: initial;
+  width: initial;
+  position: initial;
+  left: initial;
+}
+
+#modalContainer #modalCloseButton {
+  top: -8px !important;
+  right: -8px !important;
+  z-index: 9999999 !important;
+}
+
+// Fix calculator with invisible input
+.calc-main #calculator_wrapper form .input-wrapper #calculator_input {
+  color: #222;
+}
+
 .heading-right {
   position: absolute;
   top: 0px;

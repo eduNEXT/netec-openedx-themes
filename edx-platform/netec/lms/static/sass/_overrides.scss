@@ -499,3 +499,8 @@ section.outside-app h1 {
   line-height: 1.5;
 }
 
+
+login-register .action-primary:hover {
+    background: $hover-color;
+    color: $main-color;
+}

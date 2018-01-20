@@ -5,7 +5,7 @@
   overrides for common elements: [header, footer, etc]
 ========================================================*/
 $main-color: #00a1b0;
-$hover-color: white;
+$hover-color: #f0f0f0;
 $secondary-color: #1f457b;
 $screen-sm-max: 600px;
 
@@ -499,8 +499,16 @@ section.outside-app h1 {
   line-height: 1.5;
 }
 
-
-login-register .action-primary:hover {
-    background: $hover-color;
-    color: $main-color;
+.login-register .action-primary:hover, .financial-assistance-wrapper .financial-assistance-form .action-primary{
+color: $main_color;
 }
+
+.login-register, .financial-assistance-wrapper .financial-assistance-form {
+    min-height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+}
+

@@ -8,6 +8,7 @@ $main-color: #00a1b0;
 $hover-color: #f0f0f0;
 $secondary-color: #1f457b;
 $screen-sm-max: 600px;
+$course-profile-bg: url("../images/banner_courseabout.jpg");
 
 .btn-default{
   box-sizing: border-box !important;
@@ -301,6 +302,10 @@ body header.header-global .logo img{
   font-size: 16px;
   padding-top: 5px !important;
   height: 36px;
+}
+
+.course-info header.course-profile {
+  background-image: $course-profile-bg;
 }
 .action-show-bookmarks {
   text-align: left;

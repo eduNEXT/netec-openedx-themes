@@ -161,3 +161,11 @@
 
   gtag('config', '${GOOGLE_ANALYTICS_GTAG_ID}');
 </script>
+
+<!-- Add tip for password field -->
+<script type="text/javascript">
+  $(window).load(function(){
+    var elemetTip = '<span class="tip tip-input">Se requieren 8 caracteres combinando mayúsculas y números</span>';
+    $('.form-field.password-password').append(elemetTip);
+  })
+</script>

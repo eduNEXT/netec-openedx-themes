@@ -162,10 +162,42 @@
   gtag('config', '${GOOGLE_ANALYTICS_GTAG_ID}');
 </script>
 
-<!-- Add tip for password field -->
 <script type="text/javascript">
   $(window).load(function(){
-    var elemetTip = '<span class="tip tip-input">Se requieren 8 caracteres combinando mayúsculas y números</span>';
-    $('.form-field.password-password').append(elemetTip);
-  })
+    $(document).ready(function(){
+      if($('#login-and-registration-container').length > 0) {
+       var elemetTip,
+        containerPassword,
+        target = $('#register-form'),
+        target2 = $('#login-and-registration-container'),
+        config = { childList: true },
+        observer,
+        observer2;
+
+        function addTipField() {
+          var containerPassword = $('#register-form .form-field.password-password');
+          elemetTip = '<span class="tip tip-input">Mínimo 8 dígitos combinando mayúsculas, minúsculas, números y caracteres especiales.</span>';
+          return containerPassword.length && containerPassword.append(elemetTip);
+        }
+
+        observer = new MutationObserver(function(mutations){
+          addTipField();
+        });
+
+        observer2 = new MutationObserver(function(mutations){
+          var target = $('#register-form');
+          observer.observe(target[0], config);
+          addTipField();
+        });
+
+        observer2.observe(target2[0], config);
+
+        if (target[0]) {
+          observer.observe(target[0], config);
+        }
+
+        addTipField();
+        }
+    });
+  });
 </script>

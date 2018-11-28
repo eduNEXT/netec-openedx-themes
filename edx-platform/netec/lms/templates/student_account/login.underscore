@@ -3,8 +3,8 @@
 
 <% if ( context.createAccountOption !== false ) { %>
 <div class="toggle-form">
-    <span class="text"><%- gettext("First time here?") %></span>
-    <a href="#login" class="form-toggle" data-type="register"><%- gettext("Create an Account.") %></a>
+    <span class="text"><%- gettext("¿Primera vez aquí?") %></span>
+    <a href="#login" class="form-toggle" data-type="register"><%- gettext("Crear una cuenta") %></a>
 </div>
 <% } %>
 

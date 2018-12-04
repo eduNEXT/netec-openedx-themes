@@ -172,7 +172,11 @@
         target2 = $('#login-and-registration-container'),
         config = { childList: true },
         observer,
-        observer2;
+        observer2,
+        stringNameField = 'Este nombre aparecerá en cualquier certificado que obtenga.',
+        labelUserName = 'Nombre de usuario',
+        stringUserName = 'Este será su alias durante el curso. No podrá modificarse posteriormente.';
+
 
         function addTipField() {
           var containerPassword = $('#register-form .form-field.password-password');
@@ -180,14 +184,26 @@
           return containerPassword.length && containerPassword.append(elemetTip);
         }
 
+        function changeTextField(element, newString) {
+          element.html(newString);
+        }
+
         observer = new MutationObserver(function(mutations){
           addTipField();
+          changeTextField($('#register #register-name-desc'), stringNameField);
+          changeTextField($('#register #register-username-desc'), stringUserName);
+          changeTextField($('#register .form-field.text-username .label-text'), labelUserName);
+          $('#register #register-email-desc').remove();
         });
 
         observer2 = new MutationObserver(function(mutations){
           var target = $('#register-form');
           observer.observe(target[0], config);
           addTipField();
+          changeTextField($('#register #register-name-desc'), stringNameField);
+          changeTextField($('#register #register-username-desc'), stringUserName);
+          changeTextField($('#register .form-field.text-username .label-text'), labelUserName);
+          $('#register #register-email-desc').remove();
         });
 
         observer2.observe(target2[0], config);
@@ -197,6 +213,10 @@
         }
 
         addTipField();
+        changeTextField($('#register #register-name-desc'), stringNameField);
+        changeTextField($('#register #register-username-desc'), stringUserName);
+        changeTextField($('#register .form-field.text-username .label-text'), labelUserName);
+        $('#register #register-email-desc').remove();
         }
     });
   });

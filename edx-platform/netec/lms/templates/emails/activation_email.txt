@@ -1,0 +1,18 @@
+
+¡Está a punto de terminar! Use el siguiente enlace para activar su cuenta y acceder a cursos de alta calidad en ${platform_name}. Si no activa su cuenta, no podrá ingresar nuevamente.
+
+% if is_secure:
+https://${ site }/activate/${ key }
+% else:
+http://${ site }/activate/${ key }
+% endif
+
+!Disfrute de su aprendizaje!
+
+**El Equipo de ${platform_name}**
+
+-----------------------------------------------------
+
+Si necesita ayuda, mándenos un correo a ${support_email}.
+
+Este correo electrónico fue enviado automáticamente por ${lms_url} porque alguien intentó crear una cuenta en ${platform_name} usando esta dirección de correo electrónico.
